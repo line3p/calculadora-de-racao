@@ -1,0 +1,19 @@
+#nome{
+    width: 200px;
+}
+
+#peso{
+    width: 50px;
+}
+
+#calcular{
+    width: 100px;
+}
+
+.observacao{
+    font-size: 0.8rem;
+}
+
+.fonte-especial{
+    font-family: 'Gloria Hallelujah', cursive;
+}

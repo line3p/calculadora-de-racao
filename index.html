@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <title>Calculadora de ração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class=" navbar navbar-light bg-primary">
+        <a class="navbar-brand fonte-especial" href="#">
+        <img src="patinha.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Calculadora de ração
+        </a>
+    </nav>
+
+    <div class="container d-flex flex-column">
+
+        <label for="nome" class="mt-1">Qual o nome do seu cachorro/cadela?</label>
+        <input type="text" id="nome">
+
+        <label for="peso" class="mt-1">Qual o peso dele(a)? (kg)</label>
+        <input type="text" id="peso">
+
+        <p class="mb-0 mt-1">Qual o porte?</p>
+        <p class="text-muted observacao">Cálculo feito em cima do peso ideal do animal (sem ser filhote). Consulte o veterinário.</p>
+
+        
+        <label for="miniatura"> <input type="radio" value="porte-miniatura" id="miniatura"
+                name="porte"> Miniatura (até 3kg)</label>
+
+        <label for="miniatura2"> <input type="radio" value="porte-miniatura-2" id="miniatura2"
+                name="porte"> Miniatura II (3 - 5kg)</label>
+
+        <label for="pequeno"> <input type="radio" value="porte-pequeno" id="pequeno"
+                name="porte"> Pequeno (5 - 10kg)</label>  
+            
+        <label for="medio"> <input type="radio" value="porte-medio" id="medio"
+                name="porte"> Médio (10 - 25kg)</label>
+                
+        <label for="grande"> <input type="radio" value="porte-grande" id="grande"
+                name="porte"> Grande (25 - 40kg)</label>    
+
+        <label for="gigante"> <input type="radio" value="porte-gigante" id="gigante"
+                name="porte"> Gigante (mais de 40kg)</label>  
+  
+
+        <input type="submit" value="Calcular" id="calcular" class="btn btn-primary"> 
+
+        <footer>
+            <p class="text-muted observacao mt-3">Referência: www.casapraticaqualita.com.br</p>
+        </footer>
+
+    </div>
+    
+
+    <script src="jquery.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>
